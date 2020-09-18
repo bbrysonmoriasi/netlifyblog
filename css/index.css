@@ -1,0 +1,64 @@
+li {
+    list-style-type: none;
+    margin: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: Monospace;
+    
+}
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+}
+
+body {
+    margin: 0;
+    
+}
+
+nav ul button {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    ul {
+        flex-direction: column;
+        
+    }
+    
+    a {
+        display: block;
+    }
+    
+    li {
+        margin: 0;
+    }
+    
+    nav ul button {
+        
+        display: block;
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: #AFE0FF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}
