@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
     $("#ham").click(function () {
         if($(this).text() == "☰"){
@@ -8,4 +9,4 @@ $(document).ready(function () {
         
         $("nav ul li").toggle("slow");
     });
-});
+});*/

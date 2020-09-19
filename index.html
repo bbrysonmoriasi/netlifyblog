@@ -1,26 +1,111 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Meta Information -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/css/index.css">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="/css/index/index.css">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="/images/favicon.PNG" type="image/x-icon">
+
+        <!-- Title -->
         <title>Navbar</title>
     </head>
     
     <body>
-        <nav>
-            <ul>
-                <button id="ham">X</button>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-        
-        
-        <script src="/js/jquery.js" type="text/javascript"></script>
-        <script src="/js/index.js" type="text/javascript"></script>
+        <!-- Header Section, will contain the Navigation Bar -->
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Navbar Brand Referencing Home-->
+                <img class="navbar-brand img-rounded" src="/images/navbar-brand.png" width="38" height="45">
+
+                <!-- Button for toggling navbar on sm screens -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_items" aria-controls="navbar_items" aria-expanded="false" aria-label="Toggle Navigation">
+                    <!-- Toggler Icon -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbar_items">
+                    <!-- Ul list as normal and give aligned to the right -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="/" class="nav-link">Article</a></li>
+                        <li class="nav-item active"><a href="/" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- A jumbotron to introduce the users -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-1">Welcome to My Blog &#x1F973;</h1>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Section -->
+
+        <!-- The Body Section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Profile Picture -->
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-8 offset-sm-2 offset-md-3 text-center">
+                        <div class="text-center">
+                            <img alt="My personal picture" class="img-round" src="/images/profile-final.jpg">
+                            <p class="display-4">Bob Bryson Moriasi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+            </div>
+        </section>
+
+        <!-- Primary Information About Me -->
+        <main>
+            <div class="container">
+                <!-- Secondary Navigation, Switching Between Info about me -->
+                <nav>
+                    <!-- Navigation Tab Links -->
+                    <div class="nav nav-tabs nav-fill justify-content-center" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link text-success active lead" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                        <a class="nav-item nav-link text-success lead" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                        <a class="nav-item nav-link text-success lead" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Actual Navigation Content -->
+                <div class="tab-content mt-3" id="nav-tab-content">
+                    <div class="tab-pane fade show active" id="nav-home" role="tab-panel" aria-labelled-by="nav-home">
+                        <p class="lead">Name is Bob Moriasi. Student at Alliance High School, Kenya. In my teens.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tab-panel" aria-labelled-by="nav-profile">
+                        <p class="lead d-inline">First Name: </p><p class="lead d-inline">Bob</p><br>
+                        <p class="lead d-inline">Last Name: </p><p class="lead d-inline">Moriasi</p><br>
+                        <p class="lead d-inline">Schooling: </p><p class="lead d-inline">Alliance High School</p><br>
+                        <p class="lead d-inline">Place: </p><p class="lead d-inline">Kenya</p><br>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tab-panel" aria-labelled-by="nav-contact">
+                        <p class="lead d-inline">Contact: </p><p class="d-inline">+254798240253</p><br>
+                        <p class="lead d-inline">Email: </p><p class="d-inline">official.bobmoriasi@gmail.com</p><br>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Script files, jquery, then bootstrap first -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="/js/index/index.js" type="text/javascript"></script>
     </body>
     
 </html>

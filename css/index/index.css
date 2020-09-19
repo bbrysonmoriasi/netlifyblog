@@ -1,0 +1,132 @@
+/*
+li {
+    list-style-type: none;
+    margin: 2vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: Monospace;
+    
+}
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+nav {
+    width: 100vw;
+    background-color: #D6EFFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+}
+
+body {
+    margin: 0;
+    
+}
+
+nav ul button {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    ul {
+        flex-direction: column;
+        
+    }
+    
+    a {
+        display: block;
+    }
+    
+    li {
+        margin: 0;
+    }
+    
+    nav ul button {
+        
+        display: block;
+        padding: 2vw;
+        font-size: 3vh;
+        background-color: #AFE0FF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+} */
+
+body {
+    background: linear-gradient(180deg, rgb(250, 247, 247), rgb(255, 255, 255));
+
+}
+
+section.container {
+    background: rgb(255, 255, 255)
+
+}
+
+.navbar {
+    background: linear-gradient(180deg, #69f5e7, #16F5DE)
+}
+
+header > nav ul li.nav-item:hover {
+    background: #f6f6f7;
+
+}
+
+header div.jumbotron {
+    text-align: center;
+    background: #16f5de
+
+}
+
+img.img-round {
+    border-radius: 50%;
+    width: 40%;
+    
+}
+
+/* Horizontal lines */
+.divider {
+    border-top: 2px solid #16F5DE;
+
+}
+
+/* Content inside the tabs */
+main > div.container div.tab-content div.tab-pane {
+    
+}
+
+/* Container holding content inside the tabs */
+main > div.container div.tab-content {
+    border: 1px solid rgb(245, 221, 221);
+    border-radius: .5em;
+    padding: 1em;
+    min-height: 10em;
+
+}
+
+/* Some media queries */
+@media only screen and (max-width: 768px) {
+    .jumbotron > div > h1 {
+        font-size: 4rem;
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .jumbotron > div > h1 {
+        font-size: 3rem;
+
+    }
+}
+/* End Media Queries */
