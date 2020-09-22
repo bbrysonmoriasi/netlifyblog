@@ -1,26 +1,239 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/css/index.css">
-        <title>Navbar</title>
-    </head>
-    
-    <body>
-        <nav>
-            <ul>
-                <button id="ham">X</button>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
+<html lang="en">
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Stylesheets -->
+    <!--<link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index/index.css">
+
+    <title>Bob Bryson</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#home"><img src="/icons/home.svg" alt="home-icon" width="25" height="30"></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#profile">Profile<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#technologies">Technologies</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Top Jumbotron -->
+    <header class="jumbotron jumbotron-fluid text-center" id="home">
+        <p class="display-3">Bob Bryson</p>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="section" id="profile">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <p class="display-4">Profile</p>
+        </div>
+
+        <div class="container">
+            <!-- My Photo -->
+            <div class="text-center">
+                <img class="profile-pic img--round" alt="Profile Picture" src="/images/profile-final.jpg">
+            </div>
+            <hr>
+
+            <div class="profile-content">
+                <ul class="profile-detail">
+                    <li>
+                        <label>Name</label>
+                        <div class="value">
+                            <p>Bob Bryson</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <label>BirthDay</label>
+                        <div class="value">
+                            <p>June 4, 2003</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <label>Titles</label>
+                        <div class="value">
+                            <p>Student</p>
+                            <p>Developer</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <label>Hobbies</label>
+                        <div class="value">
+                            <p>Watching Movies</p>
+                            <p>Reading Novels</p>
+                            <p>Football Diehard</p>
+                            <p>Gaming</p>
+                            <p>Coding</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <label>Locations</label>
+                        <div class="value">
+                            <p>Nairobi, Kenya</p>
+                            <p>Washington - D.C, U.S.A</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section" id="technologies">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <p class="display-4">Technologies</p>
+        </div>
+
+        <div class="container">
+            <p class="title-text">Web Technologies</p>
+            <hr class="white-line">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/html5-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">HTML5</div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/css3-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">CSS3</div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/javascript-logo.png">
+                        <div class="card-title text-center h3">Javascript</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/es6-logo.png">
+                        <div class="card-title text-center h3">ES6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="container">
+            <p class="title-text">Web Frameworks</p>
+            <hr class="white-line">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/babel-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Babel</div>
+                    </div>
+                </div>
         
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/angular-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">AngularJS</div>
+                    </div>
+                </div>
         
-        <script src="/js/jquery.js" type="text/javascript"></script>
-        <script src="/js/index.js" type="text/javascript"></script>
-    </body>
-    
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/laravel-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Laravel</div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/angular-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Angular2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="container">
+            <p class="title-text">Others</p>
+            <hr class="white-line">
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/PHP_Logo.png">
+                        <div class="card-title text-center h3">PHP</div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/python-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Python3</div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/java-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Java</div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 col-xs-6 col-sm-4 col-6">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="images/tech/bash-logo.png">
+                        <span class="border-top"></span>
+                        <div class="card-title text-center h3">Bash</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!--
+    <script src="/js/jquery/jquery.js"></script>
+    <script src="/js/bootstrap/bootstrap.bundle.js"></script>
+    -->
+    <script src="/js/index/index.js"></script>
+</body>
 </html>
